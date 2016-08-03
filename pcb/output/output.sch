@@ -1,0 +1,225 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:relays
+LIBS:crystal_s
+LIBS:output-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6100 3200 1050 200 
+U 57A228CB
+F0 "Output Relay" 60
+F1 "output_relay.sch" 60
+F2 "In" I L 6100 3300 60 
+$EndSheet
+$Sheet
+S 6100 3600 1050 200 
+U 57A2A259
+F0 "Output Relay" 60
+F1 "output_relay.sch" 60
+F2 "In" I L 6100 3700 60 
+$EndSheet
+$Sheet
+S 6100 4000 1050 200 
+U 57A2A39C
+F0 "Output Relay" 60
+F1 "output_relay.sch" 60
+F2 "In" I L 6100 4100 60 
+$EndSheet
+$Sheet
+S 6100 4400 1050 200 
+U 57A2A39F
+F0 "Output Relay" 60
+F1 "output_relay.sch" 60
+F2 "In" I L 6100 4500 60 
+$EndSheet
+$Comp
+L CONN_02X04 P?
+U 1 1 57A23EF7
+P 5100 3900
+F 0 "P?" H 5100 4265 50  0000 C CNN
+F 1 "TO_MAIN" H 5100 4174 50  0000 C CNN
+F 2 "" H 5100 2700 60  0000 C CNN
+F 3 "" H 5100 2700 60  0000 C CNN
+	1    5100 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3750 5700 3750
+Wire Wire Line
+	5700 3750 5700 3300
+Wire Wire Line
+	5700 3300 6100 3300
+Wire Wire Line
+	6100 3700 5800 3700
+Wire Wire Line
+	5800 3700 5800 3850
+Wire Wire Line
+	5800 3850 5350 3850
+Wire Wire Line
+	5350 3950 5800 3950
+Wire Wire Line
+	5800 3950 5800 4100
+Wire Wire Line
+	5800 4100 6100 4100
+Wire Wire Line
+	6100 4500 5700 4500
+Wire Wire Line
+	5700 4500 5700 4050
+Wire Wire Line
+	5700 4050 5350 4050
+Wire Wire Line
+	4750 3850 4850 3850
+Wire Wire Line
+	4750 3650 4750 3750
+Wire Wire Line
+	4750 3750 4750 3850
+Wire Wire Line
+	4750 3750 4850 3750
+Wire Wire Line
+	4850 3950 4750 3950
+Wire Wire Line
+	4750 3950 4750 4050
+Wire Wire Line
+	4750 4050 4750 4150
+Wire Wire Line
+	4750 4050 4850 4050
+$Comp
+L +5V #PWR?
+U 1 1 57A2408E
+P 4750 3650
+F 0 "#PWR?" H 4750 3500 60  0001 C CNN
+F 1 "+5V" H 4765 3831 60  0000 C CNN
+F 2 "" H 4750 3650 60  0000 C CNN
+F 3 "" H 4750 3650 60  0000 C CNN
+	1    4750 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 3750
+$Comp
+L GND #PWR?
+U 1 1 57A240DE
+P 4750 4150
+F 0 "#PWR?" H 4750 3900 60  0001 C CNN
+F 1 "GND" H 4755 3969 60  0001 C CNN
+F 2 "" H 4750 4150 60  0000 C CNN
+F 3 "" H 4750 4150 60  0000 C CNN
+	1    4750 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 4050
+$Comp
+L C C?
+U 1 1 57A241EB
+P 4300 3900
+F 0 "C?" H 4415 3938 40  0000 L CNN
+F 1 "100n" H 4415 3862 40  0000 L CNN
+F 2 "" H 4338 3750 30  0000 C CNN
+F 3 "" H 4300 3900 60  0000 C CNN
+	1    4300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57A2425D
+P 4300 3650
+F 0 "#PWR?" H 4300 3500 60  0001 C CNN
+F 1 "+5V" H 4315 3831 60  0000 C CNN
+F 2 "" H 4300 3650 60  0000 C CNN
+F 3 "" H 4300 3650 60  0000 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3650 4300 3700
+$Comp
+L GND #PWR?
+U 1 1 57A242AA
+P 4300 4150
+F 0 "#PWR?" H 4300 3900 60  0001 C CNN
+F 1 "GND" H 4305 3969 60  0001 C CNN
+F 2 "" H 4300 4150 60  0000 C CNN
+F 3 "" H 4300 4150 60  0000 C CNN
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4150 4300 4100
+$Comp
+L CP1 C?
+U 1 1 57A24613
+P 3850 3900
+F 0 "C?" H 3983 3946 50  0000 L CNN
+F 1 "100u" H 3983 3855 50  0000 L CNN
+F 2 "" H 3850 3900 60  0000 C CNN
+F 3 "" H 3850 3900 60  0000 C CNN
+	1    3850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A24679
+P 3850 4150
+F 0 "#PWR?" H 3850 3900 60  0001 C CNN
+F 1 "GND" H 3855 3969 60  0001 C CNN
+F 2 "" H 3850 4150 60  0000 C CNN
+F 3 "" H 3850 4150 60  0000 C CNN
+	1    3850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4150 3850 4100
+$Comp
+L +5V #PWR?
+U 1 1 57A246CC
+P 3850 3650
+F 0 "#PWR?" H 3850 3500 60  0001 C CNN
+F 1 "+5V" H 3865 3831 60  0000 C CNN
+F 2 "" H 3850 3650 60  0000 C CNN
+F 3 "" H 3850 3650 60  0000 C CNN
+	1    3850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3650 3850 3700
+$EndSCHEMATC
