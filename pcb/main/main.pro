@@ -1,4 +1,4 @@
-update=Wed 03 Aug 2016 05:05:12 PM EEST
+update=Wed 03 Aug 2016 08:03:13 PM EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=relays
 LibName31=crystal_s
+LibName32=regulator
