@@ -28,11 +28,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:relays
+LIBS:doorbell-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -48,5 +50,12 @@ U 57A1EDDA
 F0 "Input Filter" 60
 F1 "input_filter.sch" 60
 F2 "Out" I R 3400 2300 60 
+$EndSheet
+$Sheet
+S 5450 2200 1050 200 
+U 57A228CB
+F0 "Output Relay" 60
+F1 "output_relay.sch" 60
+F2 "In" I L 5450 2300 60 
 $EndSheet
 $EndSCHEMATC

@@ -1,0 +1,171 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:relays
+LIBS:doorbell-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4850 4000 0    60   Input ~ 0
+In
+$Comp
+L R R?
+U 1 1 57A228D8
+P 5250 4000
+F 0 "R?" V 5150 4000 40  0000 C CNN
+F 1 "2.2k" V 5250 4000 40  0000 C CNN
+F 2 "" V 5180 4000 30  0000 C CNN
+F 3 "" H 5250 4000 30  0000 C CNN
+	1    5250 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 4000 4850 4000
+$Comp
+L R R?
+U 1 1 57A22995
+P 5600 4350
+F 0 "R?" H 5671 4388 40  0000 L CNN
+F 1 "4.7k" H 5671 4312 40  0000 L CNN
+F 2 "" V 5530 4350 30  0000 C CNN
+F 3 "" H 5600 4350 30  0000 C CNN
+	1    5600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4000 5700 4000
+Wire Wire Line
+	5600 4000 5600 4100
+$Comp
+L GND #PWR?
+U 1 1 57A22A13
+P 5600 4650
+F 0 "#PWR?" H 5600 4400 60  0001 C CNN
+F 1 "GND" H 5605 4469 60  0001 C CNN
+F 2 "" H 5600 4650 60  0000 C CNN
+F 3 "" H 5600 4650 60  0000 C CNN
+	1    5600 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4650 5600 4600
+$Comp
+L NPN Q?
+U 1 1 57A22A4A
+P 5900 4000
+F 0 "Q?" H 6091 4046 50  0000 L CNN
+F 1 "NPN" H 6091 3955 50  0000 L CNN
+F 2 "" H 5900 4000 60  0000 C CNN
+F 3 "" H 5900 4000 60  0000 C CNN
+	1    5900 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 4000
+$Comp
+L GND #PWR?
+U 1 1 57A22A9E
+P 6000 4650
+F 0 "#PWR?" H 6000 4400 60  0001 C CNN
+F 1 "GND" H 6005 4469 60  0001 C CNN
+F 2 "" H 6000 4650 60  0000 C CNN
+F 3 "" H 6000 4650 60  0000 C CNN
+	1    6000 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4650 6000 4200
+$Comp
+L AZ943 K?
+U 1 1 57A23086
+P 6200 3450
+F 0 "K?" H 6638 3503 60  0000 L CNN
+F 1 "AZ943" H 6638 3397 60  0000 L CNN
+F 2 "" H 6200 3450 60  0001 C CNN
+F 3 "" H 6200 3450 60  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3750 6000 3800
+$Comp
+L +5V #PWR?
+U 1 1 57A230F6
+P 6000 3100
+F 0 "#PWR?" H 6000 2950 60  0001 C CNN
+F 1 "+5V" H 6015 3281 60  0000 C CNN
+F 2 "" H 6000 3100 60  0000 C CNN
+F 3 "" H 6000 3100 60  0000 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3100 6000 3150
+$Comp
+L CONN_01X01 P?
+U 1 1 57A23157
+P 6900 3050
+F 0 "P?" H 6977 3091 50  0000 L CNN
+F 1 "OUT_LEFT" H 6977 3000 50  0000 L CNN
+F 2 "" H 6900 3050 60  0000 C CNN
+F 3 "" H 6900 3050 60  0000 C CNN
+	1    6900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3050 6450 3050
+Wire Wire Line
+	6450 3050 6450 3150
+$Comp
+L CONN_01X01 P?
+U 1 1 57A2323A
+P 6900 3850
+F 0 "P?" H 6978 3891 50  0000 L CNN
+F 1 "OUT_RIGHT" H 6978 3800 50  0000 L CNN
+F 2 "" H 6900 3850 60  0000 C CNN
+F 3 "" H 6900 3850 60  0000 C CNN
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3850 6350 3850
+Wire Wire Line
+	6350 3850 6350 3750
+$EndSCHEMATC
