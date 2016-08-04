@@ -1,4 +1,4 @@
-update=Wed 03 Aug 2016 09:10:18 PM EEST
+update=Thu 04 Aug 2016 01:23:58 PM EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/wampa/git/kicad_libraries
+LibDir=../../pcb
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=relays
+LibName31=/wampa/git/doorbell/pcb/opto_transistor
