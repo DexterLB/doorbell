@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:relays
-LIBS:opto_transistor
 LIBS:input-cache
 EELAYER 25 0
 EELAYER END
